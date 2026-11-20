@@ -11,7 +11,7 @@ pipeline {
         stage('Build calc-service') {
             steps {
                 dir('calc-service') {
-                    sh 'docker build -t 192.168.10.67:5000/calculator-calc:1.0 .'
+                    sh 'docker build -t 192.168.10.67:5000/calculator-calc:latest .'
                 }
             }
         }
