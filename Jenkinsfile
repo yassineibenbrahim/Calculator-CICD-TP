@@ -50,9 +50,9 @@ pipeline {
 
         stage('Push images'){
             steps {
+                sh 'docker push 192.168.10.67:5000/sub-service:latest'
                 sh 'docker push 192.168.10.67:5000/calc-service:latest'
                 sh 'docker push 192.168.10.67:5000/add-service:latest'
-                sh 'docker push 192.168.10.67:5000/sub-service:latest'
                 sh 'docker push 192.168.10.67:5000/mul-service:latest'
                 sh 'docker push 192.168.10.67:5000/div-service:latest'
             }
