@@ -52,7 +52,7 @@ pipeline {
             steps {
                 sh 'docker push 192.168.10.67:5000/calculator-sub:latest'
                 sh 'docker push 192.168.10.67:5000/calculator-calc:latest'
-                sh 'docker push 192.168.10.67:5000/calculator-add:latest'
+                sh 'docker push 192.168.10.67:5000/calculator-sum:latest'
                 sh 'docker push 192.168.10.67:5000/calculator-mul:latest'
                 sh 'docker push 192.168.10.67:5000/calculator-div:latest'
             }
